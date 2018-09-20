@@ -3,7 +3,9 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 # 1 converting
-img = cv2.imread('watch.jpg',cv2.IMREAD_GRAYSCALE) # Can use IMREAD_COLOR; IMREAD_UNCHANGED; 
+# img = cv2.imread('watch.jpg',cv2.IMREAD_GRAYSCALE) # Can use IMREAD_COLOR; IMREAD_UNCHANGED; 
+
+img = cv2.imread('321540.jpg',cv2.IMREAD_GRAYSCALE)
 # 2 pop up
 cv2.imshow('image',img)
 # 3 Set up Key for exit
