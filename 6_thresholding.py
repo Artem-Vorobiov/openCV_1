@@ -1,6 +1,9 @@
 import cv2
 import numpy as np
 
+# 	ИДЕЯ ----- есть картинка, в плохом качестве, плохо видно детали. Пропускаю через фильтр и видно отлично!
+
+
 # img = cv2.imread('bookpage.jpg')
 img = cv2.imread('11.jpg')
 grayscaled = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
@@ -20,6 +23,9 @@ grayscaled = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 #				=======.      MAIN.      =======
 
 th = cv2.adaptiveThreshold(grayscaled, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 119, 3)
+
+print('\n th: \n', th)					# массив с цифрасм 0-255
+print('\n type(th): \n', type(th)) 		# <class 'numpy.ndarray'>
 cv2.imshow('original',img)
 cv2.imshow('Adaptive threshold',th)
 cv2.waitKey(0)

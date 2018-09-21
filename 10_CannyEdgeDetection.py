@@ -25,10 +25,12 @@ while(1):
     # cv2.imshow('sobely',sobely)
 
     edges = cv2.Canny(frame,100,200)
+    print('\n edges: \n', edges)                    #     массив 
+    print('\n type(edges): \n', type(edges))        #     <class 'numpy.ndarray'>
+    
     cv2.imshow('Edges',edges)
 
-    k = cv2.waitKey(5) & 0xFF
-    if k == 27:
+    if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
 cv2.destroyAllWindows()
