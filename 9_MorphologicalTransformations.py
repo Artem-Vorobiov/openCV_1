@@ -3,6 +3,12 @@ import numpy as np
 
 cap = cv2.VideoCapture(0)            # <VideoCapture 0x104117eb0>    <class 'cv2.VideoCapture'>
 
+
+#   1. Подписать недостающие функции
+#   2. Доописать оставшиеся уроки
+#
+
+
 while(1):
 
     _, frame = cap.read()                               #   массив 0 - 255  <class 'numpy.ndarray'>
